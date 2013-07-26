@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Menú horizontal</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Menú horizontal</h1>
+
+<p>También conocido como menú de navegación, se utiliza de forma habitual acompañando a la cabecera de una página.</p>
+<p>Para la mayoría de los casos usaremos<strong> listas</strong>.</p>
+
+<h2>Ejemplo visual</h2>
+
+<ul class="menu-horizontal">
+		<li><a href="#">Opción 1</a></li>
+   		<li class="seleccionada"><a href="#">Opción 2</a></li>
+    	<li><a href="#">Opción 3</a>
+        	<ul>
+            	<li><a href="#">subopcion 1</a></li>
+                <li><a href="#">subopcion 2</a></li>
+            </ul>
+        </li>
+    	<li><a href="#">Opción 4</a></li>    
+	  </ul>
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="8">
+      <ul class="menu-horizontal">
+		<li><a href="#">Opción 1</a></li>
+   		<li class="selecionada"><a href="#">Opción 2</a></li>
+    	<li><a href="#">Opción 3</a>
+        	<ul>
+            	<li><a href="#">subopcion 1</a></li>
+                <li><a href="#">subopcion 2</a></li>
+            </ul>
+        </li>
+    	<li><a href="#">Opción 4</a></li>    
+	  </ul>
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="8">
+     ul.menu-horizontal{
+            width:50em;
+            float:left;
+            background-color:#CCC;
+            padding:0;           
+            
+        }
+        
+        ul.menu-horizontal li{
+            display:inline;
+            padding:0.5em 1em;
+            border-right:0.1em #666 solid;
+            float:left;
+        }
+        
+        ul.menu-horizontal li:hover{
+			background-color:#FFC;
+		}
+        
+        ul.menu-horizontal li.selecionada{
+            display:inline;
+            padding:0.5em 1em;
+            border-right:0.1em #666 solid;
+            background-color:#fff;
+        }
+        
+        ul.menu-horizontal li a{
+            color:#000;
+            font-size:1.6em;
+        }
+        
+        ul.menu-horizontal li ul{
+            display:none;
+        }
+
+
+    </textarea>
+
+<h2>Observaciones</h2>
+
+<p>Como se puede observar la opción 3 del menú tiene hijos. Esa sería la estructura a seguir si el <strong>menú horizontal es deplegable</strong>. En el ejemplo visual no vemos nada, ya que los hijos quedan ocultos inicialmente mediante css.</p>
+<p>Posteriormente se procedería al despliegue del menú, dependiendo de la funcionalidad requerida, bien mediante CSS o javascript.</p>
+<p>Es importante <strong>diferenciar con una clase la opción del menú seleccionada en cada caso</strong> (en el ejemplo se añade la clase "seleccionada").</p>
+
+
+
+</body>
+</html>

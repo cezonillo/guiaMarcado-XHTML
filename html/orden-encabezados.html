@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Orden encabezados</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Orden encabezados</h1>
+<p>
+	Como se mencionaba en el apartado "encabezados" del punto componentes HTML es muy importante seguir un orden lógico de los encabezados. Básicamente consiste en no saltarse ningún nivel y que estos estén en orden.
+</p>
+
+
+<h2>Ejemplo visual correcto</h2>
+<div class="contenedor-noticias">
+<h1 class="encabezado-ej">Encabezado 1</h1> 
+<h2>Encabezado 2</h2>
+<h3>Encabezado 3</h3>
+</div>
+
+
+<h2>Ejemplo visual incorrecto</h2>
+<div class="contenedor-noticias">
+<h1 class="encabezado-ej">Encabezado 1</h1> 
+
+<h3>Encabezado 3</h3>
+</div>
+
+<h2>Ejemplo visual incorrecto</h2>
+<div class="contenedor-noticias">
+<h1 class="encabezado-ej">Encabezado 1</h1> 
+<h3>Encabezado 3</h3>
+<h2>Encabezado 2</h2>
+</div>
+
+
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="10">
+  
+<h1 class="encabezado-ej">Encabezado 1</h1> 
+<h2>Encabezado 2</h2>
+<h3>Encabezado 3</h3>
+
+
+<h1 class="encabezado-ej">Encabezado 1</h1> 
+<h3>Encabezado 3</h3>
+
+
+<h1 class="encabezado-ej">Encabezado 1</h1> 
+<h3>Encabezado 3</h3>
+<h2>Encabezado 2</h2>
+
+    </textarea>
+
+</body>
+</html>

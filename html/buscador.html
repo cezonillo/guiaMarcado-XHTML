@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Buscador</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Buscador</h1>
+<p>
+	Se propone a continuación el buscador más común que consta de etiqueta, caja de texto y botón. <strong>Utilizaremos siempre esta estructura</strong> salvo en casos puntuales, ya que mediante estilos podremos hacer que un botón sea una imagen, ocultar la etiqueta, etc. en caso de que fuese necesario.
+</p>
+<p>
+<strong>Con este código obtendremos un buscador con código HTML accesible.</strong>
+</p>
+
+
+<h2>Ejemplo visual</h2>
+
+<div id="buscador">
+    <form action="#" name="buscador" id="buscador" method="post">
+    	<label for="busqueda">Busqueda:</label>
+        <input type="text" id="busqueda" name="busqueda" />
+        <input type="submit" value="buscar" id="buscar" name="buscar" />
+    </form>
+</div>
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="8">
+  <div id="buscador">
+    <form action="#" name="buscador" id="buscador" method="post">
+    	<label for="busqueda">Busqueda:</label>
+        <input type="text" id="busqueda" name="busqueda" />
+        <input type="submit" value="buscar" id="buscar" name="buscar" />
+    </form>
+</div> 
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="5">
+     #buscador label{
+	   font-size:1.5em;
+	   font-weight:bold;
+   }
+    </textarea>
+
+<h2>Observaciones</h2>
+<p>Con esta estructura se pueden maquetar fácilmente la mayoría de los buscadores. Si nos encontramos con diseños más complejos se implementarán específicamente en cada caso.</p>
+
+</body>
+</html>

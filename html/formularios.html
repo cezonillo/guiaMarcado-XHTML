@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Formularios</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Formularios</h1>
+
+<p>
+ Pese a ser uno de los componentes más utilizados en la programación Web, es difícil encontrase un formulario correctamente construido. A continuación se ofrece un ejemplo de formulario bien construido y accesible.  
+ </p>
+
+<h2>Ejemplo visual</h2>
+
+<form name="contacto" method="post" action="#" id="contacto">
+	<p><label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre"  /></p>
+    <p><label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" name="apellidos"  /></p>
+    <p><label for="dni">DNI:</label> <input type="text" id="dni" name="dni"  /> </p>
+    <p><label for="deshabilitado">campo deshabilitado:</label> <input type="text" id="dni" name="dni" disabled="disabled" class="deshabilitado"  /> </p>
+    <p><label for="estado-civil">Estado civil</label>
+    <select name="estado-civil" id="estado-civil">
+    	<option value="soltero">soltero</option>
+        <option value="casado">casado</option>
+    </select></p>
+    <p><label for="fumador">Fumador</label><input type="radio" id="fumador_si" name="fumador" value="si" /><label for="fumador_si">Sí</label><input type="radio" id="fumador_no" name="fumador" value="no" /><label for="fumador_no">No</label>  </p>
+    <p><input type="checkbox" id="trabajador" name="trabajador"/><label for="trabajador">Trabajador</label></p>
+    <p><label for="descripcion">Descripcion:</label> <textarea id="descripcion" name="descripcion"></textarea> </p>
+    <p><input type="submit" name="enviar" id="enviar" value="enviar" /> </p>
+    <p> <input type="reset" name="borrar" id="borrar" value="Borrar" /> </p>
+   
+
+</form>
+
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="6">
+     	&lt;form name="contacto" method="post" action="#" id="contacto"&gt;
+	&lt;p&gt;&lt;label for="nombre"&gt;Nombre:&lt;/label&gt; &lt;input type="text" id="nombre" name="nombre"  /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;label for="apellidos"&gt;Apellidos:&lt;/label&gt; &lt;input type="text" id="apellidos" name="apellidos"  /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;label for="dni"&gt;DNI:&lt;/label&gt; &lt;input type="text" id="dni" name="dni"  /&gt; &lt;/p&gt;
+    &lt;p&gt;&lt;label for="deshabilitado"&gt;campo deshabilitado:&lt;/label&gt; &lt;input type="text" id="dni" name="dni" disabled="disabled" class="deshabilitado"  /&gt; &lt;/p&gt;
+    &lt;p&gt;&lt;label for="estado-civil"&gt;Estado civil&lt;/label&gt;
+    &lt;select name="estado-civil" id="estado-civil"&gt;
+    	&lt;option value="soltero"&gt;soltero&lt;/option&gt;
+        &lt;option value="casado"&gt;casado&lt;/option&gt;
+    &lt;/select&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;label for="fumador"&gt;Fumador&lt;/label&gt;&lt;input type="radio" id="fumador_si" name="fumador" value="si" /&gt;&lt;label for="fumador_si"&gt;Sí&lt;/label&gt;&lt;input type="radio" id="fumador_no" name="fumador" value="no" /&gt;&lt;label for="fumador_no"&gt;No&lt;/label&gt;  &lt;/p&gt;
+    &lt;p&gt;&lt;input type="checkbox" id="trabajador" name="trabajador"/&gt;&lt;label for="trabajador"&gt;Trabajador&lt;/label&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;label for="descripcion"&gt;Descripcion:&lt;/label&gt; &lt;textarea id="descripcion" name="descripcion"&gt;&lt;/textarea&gt; &lt;/p&gt;
+    &lt;p&gt;&lt;input type="submit" name="enviar" id="enviar" value="enviar" /&gt; &lt;/p&gt;
+    &lt;p&gt;  &lt;input type="reset" name="borrar" id="borrar" value="Borrar" /&gt; &lt;/p&gt;
+   
+
+&lt;/form&gt;
+   
+
+	&lt;/form&gt;
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="6">
+    	label{
+		font-weight:bold;
+		}
+        .deshabilitado{
+			background-color:#CCC;
+		}
+
+		#contacto textarea{
+			vertical-align:top;
+		}
+     </textarea>
+    
+<h2>Observaciones</h2>
+<p>
+	Es <strong>necesario utilizar las etiquetas</strong> para relacionar los campos; cada campo debe tener una etiqueta "label" asociada con un texto de información sobre éste.
+Para relacionar una etiqueta con un campo, debemos añadir al campo el atributo id con un nombre y a la etiqueta el atributo for con el nombre dado al campo a relacionar.
+</p>
+<p>
+	En los campos del tipo input, textarea, select la etiqueta es recomendable que aparezca a la izquierda, en el resto (checkbox, por ejemplo) a la derecha. En los botones (submit, reset) no es obligatorio poner una etiqueta, de hecho es mejor no ponerlas.
+</p>
+<p>
+	Para conseguir un <strong>formulario un poco mas accesible</strong>, debemos colocar en todos los campos, los siguientes atributos:</p>
+<p><ul><li><p><strong>accesskey:</strong> Asocia una tecla a un campo de nuestro formulario, por lo que podremos acceder a ese campo de manera más fácil / rápida.</li>
+<li><p><strong>tabindex:</strong> indica el orden por el que se desplazará el usuario al pulsar la tecla tabulación de su teclado.</p></li></ul></p>
+<p>
+Acceskey solo puede ser asociado en los campos: button, input, label, legend y textarea, para el resto de campos deberemos de agregar este atributo en su etiqueta "label".
+</p>
+<p>
+	<strong>"form"</strong> es un elemento HTML en <strong>bloque</strong>, mientras que los <strong>"input" y "label"</strong> son elementos <strong>en línea</strong>. Esto quiere decir que por defecto se muestran unos a continuación de otros en la misma línea.
+</p>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Menú vertical</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Menú vertical</h1>
+
+<p>Se trataría del típico menú que aparece en la zona izquierda de una página</p>
+<p>Para la mayoría de los casos usaremos<strong> listas</strong>.</p>
+
+<h2>Ejemplo visual</h2>
+
+<ul class="menu-vertical">
+		<li><a href="#">Opción 1</a></li>
+   		<li class="seleccionada"><a href="#">Opción 2</a></li>
+    	<li><a href="#">Opción 3</a>
+        	<ul>
+            	<li><a href="#">subopcion 1</a></li>
+                <li><a href="#">subopcion 2</a></li>
+            </ul>
+        </li>
+    	<li><a href="#">Opción 4</a></li>    
+	  </ul>
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="8">
+      <ul class="menu-horizontal">
+		<li><a href="#">Opción 1</a></li>
+   		<li class="selecionada"><a href="#">Opción 2</a></li>
+    	<li><a href="#">Opción 3</a>
+        	<ul>
+            	<li><a href="#">subopcion 1</a></li>
+                <li><a href="#">subopcion 2</a></li>
+            </ul>
+        </li>
+    	<li><a href="#">Opción 4</a></li>    
+	  </ul>
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="8">
+    ul.menu-vertical{
+        width:20em;
+        float:left;
+        margin:0 0 2em;
+        padding:0;	
+    }
+    
+    ul.menu-vertical li{
+        padding:0.5em;
+        margin-bottom:0.1em;
+        background-color:#999;
+        list-style:none;
+    }
+    
+    ul.menu-vertical li.seleccionada{
+        padding:0.5em;
+        margin-bottom:0.1em;
+        background-color:#fff;
+        list-style:none;
+        
+    }
+    
+    ul.menu-vertical li:hover{
+        background-color:#000;
+    }
+    
+    ul.menu-vertical li ul li{
+        background-color:#333;
+    }
+    
+    ul.menu-vertical li a{
+        font-size:1.6em;
+        text-decoration:none;
+        color:#fff;
+    }
+    
+    ul.menu-vertical li ul li a{
+        font-size:1.4em;
+    }
+    
+    ul.menu-vertical li.seleccionada a{
+        color:#000;
+    }
+
+
+    </textarea>
+
+<h2>Observaciones</h2>
+
+<p>Como se puede observar la opción 3 del menú tiene hijos. Estos podrán mostrarse inicialmente, o estar ocultos e ir desplegándose al seleccionar la opción 3 o pasar sobre ella. Todo ello se haría mediante técnicas CSS o javascript dependiendo de la funcionalidad requerida.</p>
+<p>Es importante <strong>diferenciar con una clase la opción del menú seleccionada en cada caso</strong> (en el ejemplo se añade la clase "seleccionada").</p>
+
+
+
+</body>
+</html>

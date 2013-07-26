@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Cierres de elementos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Cierres de elementos</h1>
+<p>
+	En este apartado indicamos aquellos elementos HTML en los que hemos de poner especial atención para no dejarlos abiertos.
+</p>
+
+<h2>Imágenes</h2>
+    <textarea cols="100" rows="3">
+    	<img src="#" alt="" />  -->bien
+        <img src="#" alt="">  --> mal
+    </textarea>
+
+<h2>Inputs</h2>
+    <textarea cols="100" rows="3">
+    	<input type="text" name="in" id="in" /> --> bien
+        <input type="text" name="in" id="in" > --> mal
+    </textarea>
+
+<h2>Saltos de línea</h2>
+
+    <textarea cols="100" rows="3">
+    	<br /> --> bien
+		<br>  --> mal
+    </textarea>
+
+<h2>Elemento link</h2>
+
+    <textarea cols="100" rows="3">
+    	<link href="#" .... /> --> bien
+		<link href="#" .... > --> mal
+    </textarea>
+
+<h2>Observaciones</h2>
+<p>¡Hola soy coco! Esto está bien, esto está mal. Es fácil ver que el problema es que nos dejamos muchas veces el cierre por el camino. Se utiliza un tono de humor con la intención de que se quede mejor en la memoria, ya que es un error muy común.</p>
+
+</body>
+</html>

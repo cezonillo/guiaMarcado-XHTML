@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Migas de pan</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Migas de pan</h1>
+<p>
+	Las migas de pan, como todo el mundo sabe, se utilizan de forma muy habitual para indicar al usuario el lugar donde se encuentra dentro de la estructura de páginas de un portal.
+</p>
+
+<p>De forma general, utilizaremos una capa que envuelva al camino, un span inicial si es necesario un texto introductorio (por ejemplo, "estas en"), y un listado de enlaces que finalice con un span que refleje la página actual.</p>
+
+<h2>Ejemplo visual</h2>
+
+<div class="migas">
+	<span class="intro-migas">Estás en:</span>
+    <ol>
+    	<li class="enlace"><a href="#">Inicio</a></li>
+     	<li class="enlace"><a href="#">Nivel 1</a></li>
+     	<li class="enlace"><a href="#">Nivel 2</a></li>
+    	<li><span class="actual">Nivel actual</span></li>
+     </ol>
+</div>
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="5">
+     <div class="migas">
+	<span class="intro-migas">Estás en:</span>
+    <ol>
+    	<li class="enlace"><a href="#">Inicio</a></li>
+     	<li class="enlace"><a href="#">Nivel 1</a></li>
+     	<li class="enlace"><a href="#">Nivel 2</a></li>
+    	<li><span class="actual">Nivel actual</span></li>
+     </ol>
+</div>
+
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="7">
+   div.migas{
+        float:left;
+        clear:both;
+        margin-bottom:2em;
+		width:100%;
+    }
+    
+    div.migas span.intro-migas{
+        float:left;
+        font-size:1.4em;
+        color:#333;
+        font-weight:bold;
+        margin-right:0.3em;
+    }
+    
+    div.migas ol {
+    	margin:0;
+        padding:0;
+        float:left;
+    }
+    
+    div.migas ol li {
+    	margin:0;
+        padding:0;
+        float:left;
+        list-style:none;
+    }
+    
+    div.migas li.enlace{
+        float:left;
+        font-size:1.4em;
+        padding-right:1em;
+        background-image:url(../img/next.png);
+        background-position:right;
+        background-repeat:no-repeat;
+        margin-right:0.3em;	
+    }
+    
+    div.migas li.enlace a{
+        color:#666;
+    }
+    
+    div.migas span.actual{
+        color:#666;
+        font-weight:bold;	
+        float:left;
+        font-size:1.4em;
+    }
+
+
+    </textarea>
+
+
+
+</body>
+</html>

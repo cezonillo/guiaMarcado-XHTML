@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Elementos en bloque y en línea</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Elementos en bloque y en línea</h1>
+<p>
+Hay dos tipos de elementos HTML; en bloque y en línea. Un elemento en bloque es aquel que ocupa toda un línea, es decir, el 100% del ancho de su elemento contenedor,es decir, después de él, el siguiente elemento se pintaría en otra línea.
+</p>
+<p>
+Por otro lado, los elementos en línea solo ocupan lo que ocupa el contenido que hay dentro de ese elemento, y se colocan sucesivamente en la misma línea, hasta que el ancho máximo del contenedor les permite.</p>
+<p>	<strong>Dentro de un elemento en bloque se puede incrustar elementos en línea, pero no a la inversa. Un elemento en línea sólo puede contener elementos en línea. Este aspecto es muy importante, ya que si nos saltamos esta regla, estaremos generando XHTML no válido.</strong></p>
+<p>Elementos bloque más usados: h1, h2, h3, h4, h5, h6, div,  form,  pre, table,  ol,  ul , li y blockquote.</p>
+<p>Elementos en linea más usados: a, strong, em, img, input, label, select, span, abbr, cite,</p>
+	
+
+<h2>Ejemplo visual</h2>
+
+<p class="borde">bloque</p>
+<p>&nbsp;</p>
+<span class="borde">línea</span>
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="5">
+    	<p class="borde">bloque</p>
+		
+		<span class="borde">línea</span>
+    
+   	</textarea>
+
+<h2>Correcto e incorrecto HTML</h2>
+
+	   <textarea cols="100" rows="5">
+	 Correcto: 	 <h2> Esto es un <strong>ejemplo</strong></h2>
+	 Incorrecto : 	<a href="#" title="" > Página <p>Web</p></a>   
+   	</textarea>
+
+</body>
+</html>

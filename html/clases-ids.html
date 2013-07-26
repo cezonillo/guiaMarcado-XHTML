@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; ¿Dónde y cuando he de poner clases o ids?</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1> ¿Dónde y cuando he de poner clases o ids?</h1>
+
+<p>
+ La finalidad de utilizar clases e identificadores no es otra que la de <strong>separar el marcado HTML de la presentación del contenido</strong>. Por ello, aunque no sea un aspecto crítico, sí que es una buena práctica, que las clases e identificadores guarden relación con el contenido al que van asociados. Por ejemplo, si quiero envolver una noticia en una capa, un "div class="noticia" hace mucho más legible el marcado y orienta, tanto a programador, como a diseñador, sobre el contenido que llevará esa capa. Otro ejemplo típico sería utilizar los ids "cabecera", "cuerpo" y "pie" (o nombres similares) para diferenciar los contenedores principales de una página.
+ </p>
+ <p>
+ También para contenidos con propiedades específicas, es recomendable utilizar clases (nunca identificadores). Es decir, podemos utilizar clases como "destacado" o "error", que llevarían propiedades css asociadas, para que partes de texto específicas lleven una presentación diferente (texto rojo para error o negrita para destacado, por ejemplo). Así envolveríamos en un span class="error" aquel texto de error que queramos que vaya en rojo, o dentro de un span class="destacado" si queremos, por ejemplo, texto en negrita y con un tamaño de fuente mayor.
+ </p>
+
+<p>
+Este apartado resulta especialmente importante, ya que es posiblemente la pregunta más frecuente realizada desde el departamento de programación al departamento de maquetación. <strong>¿Dónde te pongo un class?</strong> Se tratará de explicar aquí de una forma simple con unos ejemplos.
+ </p>
+ 
+ 
+ 
+<h2>Cuándo poner clase (o id) únicamente en la capa que contiene todo aquello a lo que queremos aplicar estilos.</h2>
+
+<p>Estamos en el caso en el que existe una capa contenedora (generalmente un div), que abarca todos los elementos a los que queremos aplicar estilos. En el caso de que <strong> todos los elementos HTML del mismo tipo vayan a tener el mismo estilo (aspecto)</strong>, únicamente sería necesaria una clase o identificador para la capa contenedora. Es decir, si dentro de esa capa todos los enlaces, listas, tablas,etc., van a tener el mismo estilo, nos sirve únicamente una clase o identificador para la capa.</p>
+
+<p>Si hay más de una capa en el documento en la que queremos que los elementos apliquen el mismo estilo utilizaremos clases en lugar de identificadores, ya que estos han de ser únicos dentro del documento;si no es así, estaríamos cometiendo un error semántico</p>
+
+<h3>Ejemplo visual</h3>
+
+<p>	Mostraremos dos listados con las letras en rojo y con bola, una tabla con las cabeceras grises, y dos enlaces azules.</p>
+
+<div class="contenedor-borde">
+	
+    <ul>
+    	<li> Elemento 1 de la lista</li>
+        <li>Elemento 2 de la lista</li>
+    </ul>
+    
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+
+	<table>
+    	<thead>
+        	<tr>
+            	<th> encabezado 1</th>
+                <th> encabezado 2</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+            	<td>1</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    
+     <ul>
+    	<li> Elemento 1 de la lista</li>
+        <li>Elemento 2 de la lista</li>
+    </ul>
+
+	<table>
+    	<thead>
+        	<tr>
+            	<th> encabezado 1</th>
+                <th> encabezado 2</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+            	<td>1</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<h3>Código HTML</h3>
+
+   <textarea cols="100" rows="10">
+       <div class="contenedor-borde">
+       <ul>
+    	<li> Elemento 1 de la lista 1</li>
+        <li>Elemento 2 de la lista 1</li>
+    </ul>
+    
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+
+	<table>
+    	<thead>
+        	<tr>
+            	<th> encabezado 1 1</th>
+                <th> encabezado 2 1</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+            	<td>1</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    
+     <ul>
+    	<li> Elemento 1 de la lista 2</li>
+        <li>Elemento 2 de la lista 2</li>
+    </ul>
+
+	<table>
+    	<thead>
+        	<tr>
+            	<th> encabezado 1 2</th>
+                <th> encabezado 2 2</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+            	<td>1</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+</div>
+    </textarea>
+
+
+<h3>Código CSS</h3>
+<textarea cols="100" rows="10">
+	div.contenedor-borde{
+	padding:20px;
+	float:left;
+	border:1px solid #000;
+	clear:both;
+	width:90%;
+}
+
+div.contenedor-borde a{
+	color:#00C;
+	font-size:1.4em;
+}
+
+div.contenedor-borde ul li{
+	font-size:1.4em;
+	color:#f00;
+	list-style:disc;
+}
+
+div.contenedor-borde th{
+	background-color:#666;
+	color:#fff;
+}
+</textarea>
+
+<h3>Observaciones</h3>
+
+<p>Como se puede comprobar tenemos una class para el contenedor principal y con las misma clase css aplicamos estilos iguales a los mismos tipos de elementos.</p>
+
+
+<h2>Cuándo poner clases a cada elemento en particular.</h2>
+
+<p>Se pueden dar varias situaciones. Por ejemplo, podemos estar en el caso anterior, que se ha puesto un class a la capa contenedora, pero a su vez <strong>queremos que un enlace en concreto tenga un estilo diferente</strong>. Por ejemplo, un enlace "siguiente" que flote a la derecha y sea más grande y verde. También podríamos querer dos tipos de listados diferentes,etc. En este caso, cada elemento diferente tendrá su propia clase.</p>
+
+<p>Resumiendo, cualquier elemento, que bien no tenga una capa contenedora en la que queremos que todos los elementos sean comunes, o que si la tiene <strong>queremos que sea diferente al resto de los elementos del mismo tipo deberán llevar su propio class</strong>,</p>
+
+
+<h3>Ejemplo visual</h3>
+
+<p>	Tenemos una capa contenedora con los estilos definidos para sus listas y sus enlaces. Mostraremos dos listas con aspecto general de la capa y una diferente con cuadraditos y color rosa. Además tendremos dos enlaces con los aspectos generales del contendor y un enlace "siguente" con estilo distinto</p>
+
+<div class="contenedor-borde">
+	
+    <ul>
+    	<li> Elemento 1 de la lista</li>
+        <li>Elemento 2 de la lista</li>
+    </ul>
+     <ul>
+    	<li> Elemento 1 de la lista</li>
+        <li>Elemento 2 de la lista</li>
+    </ul>
+     <ul class="lista-diferente">
+    	<li> Elemento 1 de la lista diferente</li>
+        <li>Elemento 2 de la lista diferente</li>
+    </ul>
+    
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+	
+    <a href="#" class="enlace-diferente">siguiente</a>	
+
+</div>
+
+<h3>Código HTML</h3>
+
+   <textarea cols="100" rows="10">
+      <div class="contenedor-borde">
+         <ul>
+    	<li> Elemento 1 de la lista</li>
+        <li>Elemento 2 de la lista</li>
+    </ul>
+     <ul>
+    	<li> Elemento 1 de la lista</li>
+        <li>Elemento 2 de la lista</li>
+    </ul>
+     <ul class="lista-diferente">
+    	<li> Elemento 1 de la lista diferente</li>
+        <li>Elemento 2 de la lista diferente</li>
+    </ul>
+    
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+	
+    <a href="#" class="enlace-diferente">siguiente</a>	
+</div>
+    </textarea>
+
+
+<h3>Código CSS</h3>
+<textarea cols="100" rows="10">
+div.contenedor-borde a{
+	color:#00C;
+	font-size:1.4em;
+}
+
+div.contenedor-borde ul li{
+	font-size:1.4em;
+	color:#f00;
+	list-style:disc;
+}
+div.contenedor-borde ul.lista-diferente li{
+	list-style:square;
+	color:#F0F;
+}
+
+div.contenedor-borde a.enlace-diferente{
+	float:right;
+	color:#090;
+}
+</textarea>
+
+<h3>Observaciones</h3>
+
+<p>Como se puede comprobar tenemos una class general para las listas del contenedor y otro class específico para la lista diferente. Lo mismo para los enlaces.</p>
+
+
+</body>
+</html>

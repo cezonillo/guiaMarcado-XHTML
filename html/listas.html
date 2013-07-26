@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Listas</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Listas</h1>
+<p>
+	La lista es uno de los elementos HTML más utilizado. Como su propio nombre indica sirve para presentar listados, pero además su uso es muy habitual para el marcado de menús y pestañas, mapas Web, etc.
+</p>
+<p>
+	Existen tres tipos de listas: <strong>listas ordenadas, listas desordenadas y listas de definición.</strong>
+</p>
+
+<p> Además se muestra la forma correcta de marcar las <strong>listas anidadas</strong></p>
+
+<h2>Listas ordenadas</h2>
+
+<h3>Ejemplo visual</h3>
+
+<ol class="lista">
+	<li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ol>
+
+<h3>Código HTML</h3>
+	 <textarea cols="100" rows="4">
+     	<ol class="lista">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+     </textarea>
+     
+<h2>Listas desordenadas</h2>
+
+<h3>Ejemplo visual</h3>
+
+<ul class="lista">
+	<li>Elemento </li>
+    <li>Otro elemento </li>
+    <li>Un elemento más</li>
+</ul>
+
+<h3>Código HTML</h3>
+	 <textarea cols="100" rows="4">
+     	<ul class="lista">
+            <li>Elemento </li>
+            <li>Otro elemento </li>
+            <li>Un elemento más</li>
+        </ul>
+     </textarea>
+
+<h2>Listas de definición</h2>
+
+<h3>Ejemplo visual</h3>
+
+<dl class="lista">
+<dt>Menor coste</dt>
+<dd>¡La nueva versión de este producto cuesta mucho menos que la versión anterior!</dd>
+<dt>Más fácil de usar</dt>
+<dd>¡Hemos cambiado el producto para que sea mucho más fácil de usar!</dd>
+<dt>Seguro para los niños</dt>
+<dd>Puede dejar a sus hijos solos en una habitación con este producto</dd>
+</dl>
+
+
+<h3>Código HTML</h3>
+	 <textarea cols="100" rows="5">
+     	<dl class="lista">
+<dt>Menor coste</dt>
+<dd>¡La nueva versión de este producto cuesta mucho menos que la versión anterior!</dd>
+<dt>Más fácil de usar</dt>
+<dd>¡Hemos cambiado el producto para que sea mucho más fácil de usar!</dd>
+<dt>Seguro para los niños</dt>
+<dd>Puede dejar a sus hijos solos en una habitación con este producto</dd>   
+</dl>
+     </textarea>
+
+
+<h2>Listas anidadas</h2>
+
+<p>Este tipo de listas es muy habitual cuando queremos mostrar información siguiendo una jerarquía "padre-hijo"</p>
+
+<h3>Ejemplo visual</h3>
+
+<ul class="lista">
+	<li>Padre 1
+    	<ul>
+        	<li>Hijo 1</li>
+            <li>Hijo 2
+            	<ul>
+                	<li>Nieto 1</li>                    
+                </ul>
+            </li>
+        </ul>
+     </li>
+     <li>Padre 2</li>
+     <li>Padre 3</li>
+</ul>
+
+<h3>Código HTML</h3>
+
+ <textarea cols="100" rows="6">
+     	<ul class="lista">
+	<li>Padre 1
+    	<ul>
+        	<li>Hijo 1</li>
+            <li>Hijo 2
+            	<ul>
+                	<li>Nieto 1</li>                    
+                </ul>
+            </li>
+        </ul>
+     </li>
+     <li>Padre 2</li>
+     <li>Padre 3</li>
+</ul>
+     </textarea>
+
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="6">
+       ul.lista li, ol.lista li,dl.lista dt, dl.lista dd{
+            font-size:1.5em;
+        }
+        
+        dl.lista dt{
+            font-weight:bold;
+        }
+        ul.lista li li{
+			font-size:1em;
+		}
+
+
+    </textarea>
+    
+<h2>Observaciones</h2>
+<p>
+	Pese a que los ejemplos mostrados presentan toda la información verticalmente, mediante los estilos correspondientes se puede indicar que los elementos del listado se sitúen horizontalmente (propiedad "display:inline" asociada al "li").
+</p>
+<p>Las <strong>listas</strong> son elementos HTML en <strong>bloque</strong></p>
+</body>
+</html>

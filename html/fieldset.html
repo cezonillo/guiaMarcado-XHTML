@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Contenedores fieldset</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Contenedores fieldset</h1>
+
+<p>
+ Este tipo de contenedores se utilizan para agrupar campos de datos dentro de un formulario. Su aspecto por defecto pretende ser el de un bloque rodeado por un borde y su titular situado sobre el propio borde.  
+ </p>
+
+<h2>Ejemplo visual</h2>
+
+<form>
+<fieldset>
+	<legend>Titular</legend>
+    <p><label for="campo1">campo 1:</label><input class="valor" type="text" name="campo1"/>   </p>  
+     <p><label for="campo2">campo 2:</label><input class="valor" type="text" name="campo2"/>   </p>  
+     <p><label for="campo3">campo 3:</label><input class="valor" type="text" name="campo3"/>   </p>  
+</fieldset>
+</form>
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="6">
+    	<form>
+<fieldset>
+	<legend>Titular</legend>
+    <p><label for="campo1">campo 1:</label><input class="valor" type="text" name="campo1"/>   </p>  
+     <p><label for="campo2">campo 2:</label><input class="valor" type="text" name="campo2"/>   </p>  
+     <p><label for="campo3">campo 3:</label><input class="valor" type="text" name="campo3"/>   </p>  
+</fieldset>
+</form>
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="6">
+    	label{
+			font-weight:bold;
+		}
+
+        
+    </textarea>
+    
+<h2>Observaciones</h2>
+
+<p>
+	Los "fieldset" y "legend" son <strong>elementos HTML en bloque</strong>. Además el elemento <strong>"legend" no es válido semánticamente si no es dentro de un "fieldset".</strong>
+</p>
+<p>Fuera de un formulario, los elementos "fielset", "legend" y "label", no tienen sentido semánticamente hablando.</p>
+
+</body>
+</html>

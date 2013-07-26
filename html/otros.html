@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Otros elementos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Otros elementos</h1>
+<p>
+	En este apartado se tratarán aquellos elementos HTML menos comunes, pero no por ello menos importantes a la hora de realizar un marcado semánticamente correcto.
+</p>
+
+<h2>ABBR</h2>
+<p>
+Pese a ser un elemento escasamente utilizado, <strong>su uso debería ser obligatorio</strong> cada vez que utilicemos una abreviatura.
+</p>
+
+<h3>Ejemplo visual</h3>
+
+<p><abbr title="telefono">tlfno</abbr></p>
+
+<h3>Código HTML</h3>
+    <textarea cols="100" rows="1">
+      <abbr title="telefono">tlfno</abbr>
+    </textarea>
+
+
+<h3>Observaciones</h3>
+<p>
+<strong>Abbr </strong>es un elemento HTML <strong>en línea</strong>.
+</p>
+
+<h2>Acronym</h2>
+<p>
+Como su propio nombre indica este elemento se utiliza para definir acrónimos. Al igual que las abreviaturas <strong>su uso debería ser obligatorio</strong> pese a ser escasamente utilizado.
+</p>
+
+<h3>Ejemplo visual</h3>
+
+<p><acronym title="Federación Internacional de Automovilismo">FIA</acronym></p>
+
+<h3>Código HTML</h3>
+    <textarea cols="100" rows="1">
+      <acronym title="Federación Internacional de Automovilismo">FIA</acronym>
+    </textarea>
+
+
+<h3>Observaciones</h3>
+<p>
+<strong>Acronym</strong> es un elemento HTML <strong>en línea</strong>.
+</p>
+
+<h2>Saltos de línea BR</h2>
+<p>
+Es un elemento HTML que inserta un salto de línea. Antiguamente su uso era muy común, pero hoy día, con un marcado correcto no debería hacer falta ya que una buena práctica si queremos insertar un salto de línea sería utilizar dos párrafos diferentes.
+</p>
+
+<h3>Ejemplo visual</h3>
+
+<p>Hola<br /> ¿Qué tal?</p>
+
+<h3>Código HTML</h3>
+    <textarea cols="100" rows="1">
+      <p>Hola&lt;br /&gt; ¿Qué tal?</p>
+    </textarea>
+
+
+<h3>Observaciones</h3>
+<p>
+Es <strong>importante utilizar el código &lt;br/&gt; para los saltos de línea</strong>. Es muy habitual utilizar el código <strong>&lt;br&gt; lo que supone un error en el marcado XHTML</strong>, pues la etiqueta br quedaría abierta.
+</p>
+
+<h2>Citas Blockquote</h2>
+<p>
+Elemento HTML para incluir citas. El mejor ejemplo de uso sería un foro de discusión en el que puedes citar el contenido redactado por otra persona</p>
+
+<h3>Ejemplo visual</h3>
+
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet ante dui.</blockquote>
+
+<h3>Código HTML</h3>
+    <textarea cols="100" rows="1">
+     <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet ante dui.</blockquote>
+    </textarea>
+
+<h3>Código CSS</h3>
+	<textarea cols="100" rows="4">
+    	blockquote{
+			font-size:1.5em;
+			border:0.1em #ccc solid;
+			padding:0.5em;
+			font-style:italic;
+		}
+    </textarea>
+
+<h3>Observaciones</h3>
+<p>
+Las <strong>citas</strong> son elementos HTML <strong>en bloque.</strong>
+</p>
+
+
+</body>
+</html>

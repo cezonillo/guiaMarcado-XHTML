@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Paginación</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Paginación</h1>
+
+<p>Para la paginación, usaremos listas ordenadas HTML.</p>
+
+<h2>Ejemplo visual</h2>
+
+<ol class="pag">
+	<li><a href="#">&lt;&lt;</a></li>
+    <li><a href="#">&lt;</a></li>   	
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>    
+    <li class="seleccionada"><span>5</span></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">...</a></li>
+    <li><a href="#">&gt;</a></li>
+    <li><a href="#">&gt;&gt;</a></li>   	
+</ol>	  
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="8">
+    <ol class="pag">
+        <li><a href="#">&lt;&lt;</a></li>
+        <li><a href="#">&lt;</a></li>   	
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>    
+        <li class="seleccionada"><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">...</a></li>
+        <li><a href="#">&gt;</a></li>
+        <li><a href="#">&gt;&gt;</a></li>   	
+    </ol>	  
+
+
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="8">
+   ol.pag li{
+        display:inline;
+        margin-right:0.5em;
+        list-style-type:none;
+            
+    }
+    
+    ol.pag li a{
+        font-size:1.4em;
+    }
+    
+    ol.pag li.seleccionada span{
+        font-weight:bold;
+        color:#000;
+        font-size:1.4em;
+    }
+
+
+    </textarea>
+
+<h2>Observaciones</h2>
+
+<p>Es importante <strong>diferenciar con una clase la página en la que nos encontramos en cada caso</strong> (en el ejemplo se añade la clase "seleccionada").</p>
+
+<p> Indicar también, que <strong>la página actual no debería ser enlazable y es conveniente envolverla en un "span"</strong>.</p>
+
+
+
+</body>
+</html>

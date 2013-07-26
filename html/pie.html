@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Enlaces pie de página/ recursivas cabecera</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Enlaces pie de página/ recursivas cabecera</h1>
+<p>
+	Hablamos en este punto de los enlaces a páginas que nos encontramos normalmente en la cabecera o en el pie de la página. Para ellos <strong>usaremos listados con enlaces</strong>.
+</p>
+
+
+<h2>Ejemplo visual</h2>
+
+<ul class="pie">
+	<li><a href="#">Opción 1</a></li>
+   	<li><a href="#">Opción 2</a></li>
+    <li><a href="#">Opción 3</a></li>
+    <li><a href="#">Opción 4</a></li>    
+</ul>	  
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="5">
+    <ul class="pie">
+        <li><a href="#">Opción 1</a></li>
+        <li><a href="#">Opción 2</a></li>
+        <li><a href="#">Opción 3</a></li>
+        <li><a href="#">Opción 4</a></li>    
+    </ul>
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="8">
+    ul.pie li{
+         display:inline;
+         padding:0.5em;
+         border-left:0.1em #666 solid;
+     }
+     
+      ul.pie li:first-child{
+          border:0;
+      }
+      
+       ul.pie li a{
+           color:#34427d;
+           font-size:1.5em;
+       }
+    </textarea>
+
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Pestañas</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Pestañas</h1>
+
+<p>Las pestañas no dejan de ser un menú horizontal, con un solo nivel y unos estilos que simulen una pestaña, por tanto se usarán <strong>listas </strong>en la mayoría de los casos.</p>
+
+<h2>Ejemplo visual</h2>
+
+<ul class="pest">
+	<li><a href="#">Opción 1</a></li>
+   	<li class="seleccionada"><a href="#">Opción 2</a></li>
+    <li><a href="#">Opción 3</a></li>
+    <li><a href="#">Opción 4</a></li>    
+</ul>	  
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="8">
+     <ul class="pest">
+        <li><a href="#">Opción 1</a></li>
+        <li class="seleccionada"><a href="#">Opción 2</a></li>
+        <li><a href="#">Opción 3</a></li>
+        <li><a href="#">Opción 4</a></li>    
+    </ul>	  
+
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="8">
+    ul.pest{
+        width:100%;
+        float:left;
+        background-color:#fff;
+        padding:0;
+        margin:0;
+        border-bottom:0.1em #666 solid;
+        margin-bottom:1em;
+        
+        
+    }
+    
+    ul.pest li{
+        display:inline;
+        padding:0.5em 1em;
+        border:0.1em #666 solid;
+        border-bottom:0;
+        float:left;
+        margin-right:0.5em;	
+        margin-bottom:-0.1em;
+        background-color:#fff;
+    }
+    
+    ul.pest li a{
+        font-size:1.6em;
+        text-decoration:none;
+    }
+    
+    ul.pest li:hover, ul.pest li.seleccionada{
+        background-color:#CCC;
+    }
+
+
+    </textarea>
+
+<h2>Observaciones</h2>
+
+<p>Es importante <strong>diferenciar con una clase la opción del menú seleccionada en cada caso</strong> (en el ejemplo se añade la clase "seleccionada").</p>
+
+
+
+</body>
+</html>

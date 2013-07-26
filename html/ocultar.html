@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Ocultar elementos por css: 2 situaciones y 2 formas de hacerlo </title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Ocultar elementos por css: 2 situaciones y 2 formas de hacerlo</h1>
+<p>
+	En muchas ocasiones se plantea la situación de ocultar elementos HTML mediante hojas de estilo. Se dan dos casos:
+    <ol>
+    	<li><p>Elementos que no queremos que aparezcan, bien porque se les aplicará un efecto para que aparezcan ante determinada acción, o bien porque en algún caso concreto queremos omitir cierta parte del código. En este caso utilizaremosla propiedad de css <strong>"display:none"</strong>. Un ejemplo habitual sería el submenú de un menú desplegable, que inicialmente está oculto y al pasar por encima de la opción padre se despliega. Otro caso claro sería en aquellos casos que queremos ocultar información. Es <strong> importante destacar</strong> que en estos casos, lo mejor es eliminar el código ya que no se necesita. Sólo si no fuera posible por alguna razón eliminar ese código recurriríamos a ocultarlo mediante "display:none".</p></li>
+        <li><p>Elementos que <strong>por cuestiones de diseño queremos que no aparezcan, pero semánticamente son necesarios para la validación del código XHTML y pautas de accesibilidad</strong>. Quizá el ejemplo más claro y habitual en estos casos es la etiqueta "buscador" que se usa para un formulario cuya funcionalidad implementa un buscador. Muchas veces nos encontramos con buscadores que visualmente sólo son una caja de texto y un botón para la búsqueda. Para que el formulario sea semánticamente correcto ha de llevar una etiqueta "label" asociada a la caja de texto, pero no queremos que aparezca. En este caso <strong> para "ocultarla" le pondríamos mediante css una posición absoluta ("position:absolute") y la mandaríamos al "infinito" (por ejemplo "left:-99999px")</strong>. De este modo la etiqueta está ahí, pero la sacamos fuera de la pantalla.</p></li>
+    </ol>
+</p>
+<p>
+	La explicación del por qué, tiene que ver con los lectores de pantalla, dispositivos que, por ejemplo, la gente ciega utiliza para navegar. Estos dispositivos si se encuentran un "display:none" lo saltan y no lo leen. Sin embargo, la lectura de la página es secuencial y los estilos no le afectan "para nada", es decir, si nos encontramos una etiqueta, aunque esté posicionada en el "infinito", para el lector ahí hay una etiqueta y la va a leer. En este caso la etiqueta es relevante para la persona que está utilizando el lector de pantalla.
+</p>
+
+</body>
+</html>

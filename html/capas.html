@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Capas contenedoras</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Capas contenedoras</h1>
+
+<p>
+ Conocidas como capas o "div" se utilizarán para presentar información de forma entructurada y organizada. Se usarán tantas como bloques de información se consideren oportunos, tanto independientes, como anidados (es decir, bloques dentro de un mismo bloque).
+ </p>
+<p>
+En la mayoría de las ocasiones llevarán asociadas un identificador o clase, que permitirá darle estilos personalizados a cada una de ellas (anchos, imágenes de fondo, bordes, etc). 
+</p>
+
+<h2>Ejemplo visual</h2>
+
+<p>Se trata de la típica estructuración en cabecera, cuerpo y pié de página.</p>
+
+<div id="contenedor-ej">
+	<div id="cabecera-ej">
+    	<p>cabecera</p>
+    </div>
+    <div id="cuerpo-ej">
+    	<p>cuerpo</p>
+    </div>
+    <div id="pie-ej">
+    	<p>pie de página</p>
+    </div>
+</div>
+
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="6">
+        <div id="contenedor-ej">
+			<div id="cabecera-ej">
+    			<p>cabecera</p>
+    		</div>
+            <div id="cuerpo-ej">
+                <p>cuerpo</p>
+            </div>
+            <div id="pie-ej">
+                <p>pie de página</p>
+            </div>
+		</div>
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="6">
+       #contenedor-ej{
+            width:50em;	
+            clear:both;
+            float:left;
+            margin-bottom:3em;
+        }
+        
+        #cabecera-ej{
+            width:100%;
+            float:left;
+            clear:both;
+            height:4em;
+            background-color:#CCC;
+        }
+        
+        #cuerpo-ej{
+            width:100%;
+            float:left;
+            clear:both;
+            height:5em;
+            background-color:#999;
+        }
+        
+        #pie-ej{
+            width:100%;
+            float:left;
+            clear:both;
+            height:4em;
+            background-color:#666;
+        }
+
+    </textarea>
+    
+<h2>Observaciones</h2>
+<p>
+	En el código de ejemplo se han utilizado siempre identificadores para las capas. En este caso no es ningún problema debido a que son únicos y solamente se utilizarán una vez por cada página. Sin embargo, <strong>es importante destacar</strong>, que si un tipo de bloque con sus estilos correspondientes se utiliza en más de una ocasión dentro del documento, utilizaremos el atributo "class" para aplicarle CSS, ya que <strong>no es semánticamente correcto que haya dos elementos con el mismo identificador</strong>.
+</p>
+<p>
+	Los "div" son <strong>elementos HTML en bloque</strong>, eso quiere decir, que por defecto ocupan toda un línea. En el apartado aspectos importantes se indican las diferencias entre elementos en bloque y en línea y las pautas a seguir a la hora de utilizarlos.
+</p>
+</body>
+</html>

@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Galerías de imágenes</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Galerías de imágenes</h1>
+
+<p>Pese a indicar una galería de imágenes como tipología de contenido en este documento, <strong>siempre intentaremos evitar el desarrollo propio de este elemento</strong>, ya que existen multitud de galerías gratuitas que podemos reutilizar. Si no fuese el caso, presentaremos las miniaturas mediante un listado o por capas dependiendo de la sitiación y la funcionalidad requerida.</p>
+
+<h2>Galería con listas</h2>
+
+<h3>Ejemplo visual</h3>
+
+<ul class="galeria">
+	<li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>   
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+    <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>       	
+</ul>	  
+
+<h3>Código HTML</h3>
+    <textarea cols="100" rows="8">
+    <ul class="galeria">
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>   
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>
+        <li><a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a></li>       	
+    </ul>	  
+
+
+    </textarea>
+
+<h3>Código CSS</h3>
+	<textarea cols="100" rows="6">
+   ul.galeria li{
+        display:inline;
+        margin-right:3em;
+    }
+    
+    ul.galeria li img{
+        border:0;
+        padding:0.5em;
+        border:0.1em #34427d solid;
+    }
+
+
+
+    </textarea>
+
+<h3>Observaciones</h3>
+
+<p>Generalmente utilizaremos listados para presentaciones muy simples (solo miniaturas), como la del ejemplo.</p>
+
+
+<h2>Galería con capas</h2>
+
+<h3>Ejemplo visual</h3>
+
+<div class="galeria">
+
+    <div class="linea">
+      <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial. <br />
+			OE OE OE OE OE OE</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+    </div>
+    
+    <div class="linea">
+      <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+    </div>
+
+</div>
+
+<h3>Código HTML</h3>
+    <textarea cols="100" rows="8">
+    <div class="galeria">
+
+    <div class="linea">
+      <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial. <br />
+			OE OE OE OE OE OE</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+    </div>
+    
+    <div class="linea">
+      <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+       <div class="grupolinea"> 
+          <a href="#"><img src="img/NUR.png" alt="minuatura de bebe celebrando el mundial" /></a>
+          <p class="fecha">28-05-2010</p>
+          <p class="descripcion"></p>
+          <p>Nena wapísima celebrando el mundial</p>
+      </div>
+    </div>
+
+</div>
+
+
+    </textarea>
+
+<h3>Código CSS</h3>
+	<textarea cols="100" rows="6">
+  .galeria{
+	width:100%;
+	float:left;
+	clear:both;
+	}
+.galeria .linea {padding:1.5em 0 1.5em 0; margin:0 0 1.5em;border-bottom:1px solid #DEDEDE; float:left;clear:left;}
+.galeria .grupolinea {float:left;width:170px;}
+.galeria .grupolinea p {float:left;width:140px;margin:0;padding:0}
+.galeria img {width:130px;border:2px solid #dedede;background:#fff;padding:2px}
+
+
+
+    </textarea>
+
+<h3>Observaciones</h3>
+
+<p>Utilizaremos esta presentación cuando las <strong>miniaturas vayan acompañadas de un título y/o descripción que pueden tener un alto variable</strong>, así se ajustará cada fila al mismo alto.</p>
+
+
+
+
+
+</body>
+</html>

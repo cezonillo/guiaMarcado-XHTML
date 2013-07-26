@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Im&aacute;genes</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Imágenes</h1>
+
+<p>
+ Se utilizarán de forma general los siguientes formatos: jpg, gif y png.
+</p>
+<p>
+  En general el jpg y el png nos ofrecen una mejor calidad en cuanto a gráficos.
+</p>
+<p>
+	Tanto gif, como png nos ofrecen la posibilidad de generar imágenes con trasparencia. Pese a obtener una mayor calidad con un peso similar, la transparencia del formato png no es soportada por el navegador IE6.
+</p>
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="2">
+        <img src="imagen.jpg" alt="descripcion corta de la imagen" width="100" height="50" />
+    </textarea>
+
+<h2>Código CSS</h2>
+	<p>A continuación se muestra un código CSS de ejemplo que aplica a una imagen.</p>
+	<textarea cols="100" rows="5">
+       img{
+       		border:0;
+            margin:0.5em;
+            vertical-align: top;
+       }
+    </textarea>
+    
+    <p>Este código css eliminará el borde que por defecto sale en las imágenes y además le asigna un margen a la misma. Los elemetos en línea que acompañen a la imagen (textos, otra imagen, etc.) se alinearán verticalmente en su parte superior.</p>
+
+<h2>Observaciones</h2>
+<p>Si se desean quitar los bordes que por defecto rodean a una imagen, es necesario hacerlo mediante CSS. Aunque <strong>el atributo border="0"</strong> de una imagen consigue el mismo efecto, <strong>no se considera una buena práctica</strong>, no pasando así los test de accesibilidad. Sin embargo, y al contrario que en las tablas, utilizar los atributos <strong>"width" y "height", se considera una buena práctica y es recomendable usarlos</strong>, ya que de este modo, se reserva el espacio de la imagen antes de que termine su carga, evitando así saltos visuales en la página una vez que se carga la misma.</p>
+<p> Por último, para pasar los test de accesibilidad, es importante proporcionar una alternativa textual a la imagen; para ello debemos rellenar de una forma<strong> coherente el atributo "alt" de la imagen</strong>. Para un correcto marcado, se cree conveniente remarcar que la finalización del elemento ha de ser con los caracteres "/&gt;", ya que únicamente con "&gt;" el xhtml no sería valido, pues la etiqueta imagen no tendría cierre.
+</p>
+
+</body>
+</html>

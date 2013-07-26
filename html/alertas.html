@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Alertas</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Alertas</h1>
+<p>
+	Este tipo de contenido lo usamos cuando queremos dar al usuario un mensaje de error, advertencia, caso de éxito, etc.
+</p>
+
+
+<h2>Ejemplo visual</h2>
+
+<div class="alerta-warning">
+	<span>Warning!</span>
+</div>	  
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="5">
+   <div class="alerta-warning">
+	<span>Warning!</span>
+	</div>	 
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="10">
+     div.alerta-warning{
+           float:left;
+           clear:both;
+           margin-bottom:2em;
+           padding:0.5em;
+           border:0.1em #C00 solid;
+           background-color:#FCC;	   
+       }
+       
+       div.alerta-warning span{
+           float:left;
+           padding-left:1.1em;
+           font-size:1.5em;
+           background-image:url(../img/alert.png);
+           background-position:left;
+           background-repeat:no-repeat;
+       }
+    </textarea>
+
+<h2>Observaciones</h2>
+<p>Cuando usemos esta estructura <strong>para mostrar diferentes tipos de alertas, debemos utilizar clases diferentes en la clase contenedora</strong>, para así poder usar distintos iconos y colores.</p>
+
+</body>
+</html>

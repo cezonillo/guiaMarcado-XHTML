@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Tablas</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Tablas</h1>
+<p>
+	Pese a tener mala fama como elemento de maquetación, las tablas son necesarias en muchos casos como elemento para presentar datos, además de ser accesibles si se marcan correctamente.
+</p>
+
+<h2>Ejemplo visual</h2>
+
+
+
+<table summary="resumen tabla">
+	<caption>Título de la tabla (Ej: visitantes de países)</caption>
+	<thead>
+		<tr>
+			<th>Mes</th>
+			<th>España</th>
+			<th>México</th>
+
+			<th abbr="Estados Unidos">EEUU</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Totales</th>
+			<td>21</td>
+
+			<td>42</td>
+			<td>63</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<th>Enero</th>
+			<td>10</td>
+
+			<td>20</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<th>Febrero</th>
+			<td>11</td>
+			<td>22</td>
+
+			<td>33</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="10">
+        <table summary="resumen tabla">
+	<caption>Título de la tabla (Ej: visitantes de países)</caption>
+	<thead>
+		<tr>
+			<th>Mes</th>
+			<th>España</th>
+			<th>México</th>
+
+			<th abbr="EEUU">Estados Unidos</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Totales</th>
+			<td>21</td>
+
+			<td>42</td>
+			<td>63</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<th>Enero</th>
+			<td>10</td>
+
+			<td>20</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<th>Febrero</th>
+			<td>11</td>
+			<td>22</td>
+
+			<td>33</td>
+		</tr>
+	</tbody>
+</table>
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="6">
+       table{
+            border:0.1em #666 solid;
+            margin-top:1em;
+        }
+        
+        td, th{
+            font-size:1.5em;
+            padding:0.5em;	
+        }
+        
+        th{
+            background-color:#34427d;
+            color:#fff;
+        }
+        
+        caption{
+            font-size:1.6em;
+        }
+
+
+    </textarea>
+    
+<h2>Observaciones</h2>
+<p>
+		Se ha de etiquetar correctamente cada celda. Básicamente se usa <strong>"th" para los encabezados</strong> tanto de filas como de columnas y <strong>"td" para los datos</strong>. Cómo hacerlo depende de los datos que quieras representar en la tabla y de la importancia que le des a cada dato. La misma información puede mostrarse de muchas formas.
+</p>
+<p>
+	Los elementos "tfoot" y "caption" no son obligatorios, pero <strong>sí  es necesario diferenciar la cabecera de la tabla y el cuerpo de la misma</strong> con los elementos "thead" y "tbody".
+</p>
+<p>Aunque se muestra al final de la tabla, <strong>el elemento "tfoot" ha de ir siempre entre el "thead" y el "tbody"</strong></p>
+<p>
+	Si un encabezado tiene un contenido largo se debe usar el <strong>atributo "abbr" para indicar una abreviatura </strong>que reduzca las repeticiones y el tiempo de lectura. 
+</p>
+<p>
+	Por último, indicar que es <strong>muy importante utilizar siempre el atributo "summary" </strong>que describa de forma resumida el contenido de la tabla. Sin él la tabla no pasará los test de accesibilidad.
+</p>
+<p>Las <strong>tablas</strong> son elementos HTML <strong>en bloque</strong></p>
+
+</body>
+</html>

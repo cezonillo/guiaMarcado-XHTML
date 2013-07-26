@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>B2B &middot; Encabezados</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
+</head>
+
+<body class="dcha">
+<h1>Encabezados</h1>
+<p>
+	Los encabezados o títulos HTML implementan una función similar a los títulos de un documento Word, por ejemplo.
+</p>
+
+<h2>Ejemplo visual</h2>
+
+<h1 class="encabezado-ej">Encabezado 1</h1>
+<h2>Encabezado 2</h2>
+<h3>Encabezado 3</h3>
+<h4>Encabezado 4</h4>
+<h5>Encabezado 5</h5>
+<h6>Encabezado 6</h6>
+
+
+<h2>Código HTML</h2>
+    <textarea cols="100" rows="6">
+    <h1 class="encabezado-ej">Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <h3>Encabezado 3</h3>
+    <h4>Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+    </textarea>
+
+<h2>Código CSS</h2>
+	<textarea cols="100" rows="6">
+     h1{
+	font-size:2.6em;
+	margin-bottom:1em;
+	color:#34427d;
+	padding-bottom:0.5em;
+	border-bottom:0.1em #34427d solid;
+	clear:both;
+	
+}
+
+h2{
+	font-size:2.2em;
+	margin-bottom:0.5em;
+	color:#535387;
+	clear:both;
+}
+
+h3{
+	font-size:1.8em;
+	margin-bottom:0.5em;
+	color:#464671;
+	clear:both;
+}
+
+h1.encabezado-ej{
+	border:0;
+	margin-bottom:0;
+}
+
+h4{
+	font-size:1.8em;
+}
+
+h5{
+	font-size:1.6em;
+}
+
+h6{
+	font-size:1.4em;
+}
+
+
+    </textarea>
+
+<h2>Observaciones</h2>
+<p>
+<strong>Sólo puede haber un encabezado h1 por página y este generalmente se corresponde con el logo o nombre del portal.</strong>. Puede haber varios encabezados de otro nivel que no sea 1.
+</p>
+<p>
+Los<strong> encabezados deben seguir siempre un orden mayor a menor</strong>,es decir No se debe poner un h1 y un h3 si no hay entre ellos un h2. 
+</p>
+<p>Aunque por norma general los tamaños de fuente suelen ir de mayor a menor no es obligatorio que sea así. No obstante es recomendable por cuestiones de usabilidad.</p>
+<p>Los <strong>encabezados</strong> son elementos HTML <strong>en bloque</strong></p>
+
+</body>
+</html>
